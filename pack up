@@ -1,0 +1,6 @@
+ls -d $PWD/moves/*.java > moves/sources
+javac -classpath lib/Pokemon.jar @moves/sources
+ls -d $PWD/pokemons/*.java > pokemons/sources
+javac -classpath lib/Pokemon.jar;. @pokemons/sources
+javac -classpath lib/Pokemon.jar;. Main.java
+jar -cmf MANIFEST.mf Lab2.jar Main.class lib/Pokemon.jar pokemons/*.class moves/*.class
