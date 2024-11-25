@@ -9,8 +9,6 @@ public class QuickAttack extends PhysicalMove{
 	}
 	@Override
 	protected String describe(){
-		//String[] pieces = this.getClass().toString().split("\\.");
-		//return "использует" + pieces[pieces.length-1];
 		return "использует Quick Attack.";
 	}
 	
