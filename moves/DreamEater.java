@@ -11,7 +11,6 @@ public class DreamEater extends SpecialMove{
 	}
 	@Override
 	protected void applyOppDamage(Pokemon def, double damage){
-		//Разобраться как проверить, есть ли в кондишках сон, только при этом накинуть урон + закинуть урон себе в виде хила.
 		if (def.getCondition() == Status.SLEEP)
 		{
 			super.applyOppDamage(def, damage);
@@ -26,8 +25,6 @@ public class DreamEater extends SpecialMove{
 	}
 	@Override
 	protected String describe(){
-		//String[] pieces = this.getClass().toString().split("\\.");
-		//return "использует" + pieces[pieces.length-1];
 		return "использует Dream Eater.";
 	}
 	
